@@ -5,7 +5,7 @@ Este repositório tem como objetivo responder as perguntas e desafios propostos 
 Resumidamente, se trata de uma série de desafios de engenharia de dados junto a algumas questões de negócio a serem respondidas utilizando como base o banco de dados fictício fornecido.
 
 
-    ![Logo](https://cdn.pop-pr.rnp.br/logo-rnp.png)
+![Logo](https://cdn.pop-pr.rnp.br/logo-rnp.png)
 
 
 

@@ -85,7 +85,7 @@ AttributeError: 'OptionEngine' object has no attribute 'execute'
 ## Resolução 
 A partir das barreiras encontradas, precisei utilizar a via menos performática, utilizando a biblioteca Polars do Python para executar as consultas, converter para um dataframe do Pandas, para finalmente converter para Pyspark e salvar em formato Delta.
 
-Preferiria não realizar todo esse fluxo, porém foi a solução que encontrei para demonstrar o máximo de habilidades possíveis, sem prejudicar o tempo de entrega do case.
+Preferiria não realizar todo esse fluxo, porém foi a solução que encontrei para demonstrar o máximo de habilidades possíveis, sem prejudicar o tempo de entrega do case, e espero que nenhuma das dificuldades impacte negativamente na análise.
 
 Como pode ser visualizado no notebook disponibilizado no diretório src, utilizei duas funções: query_data e dataframe_to_delta, a primeira para realizar a consulta sql, e a segunda para as conversões e armazenamento em formato delta.
 
@@ -121,7 +121,13 @@ def dataframe_to_delta(file_name : str):
         print(f'Erro: {e}')
 ```
 
+Infelizmente não foi possível baixar os artefatos(parquets e diretório delta_logs) após armazenamento em formato delta devido a limitações do Databricks Comunnity em relação ao download direto do DBFS e configuração de buckets em cloud, então, disponibilizei um segundo notebook no diretório src - RESPOSTAS - LEITURA PARQUETS DELTA - para visualização das respostas via Pyspark lendo diretamente os parquets no DBFS.
+
+Evidência:
+![alt text](https://github.com/RVegh/rnp-teste/blob/master/imagens/evidencia_delta_logs.png?raw=true)
+
 ## Considerações
- - Todos os artefatos derivados do armazenamento em delta podem ser encontrados na pasta dados_delta.
+ - Todos os artefatos derivados do armazenamento em delta foram ou expostos via evidência de imagem, ou lidos no notebook RESPOSTAS - LEITURA PARQUETS DELTA para melhor visualização.
  - As queries utilizadas podem ser encontradas no diretório src.
  - Caso necessário, o notebook utilizado pode ser executado localmente, sem uso do Databricks, apenas utilizando o Jupyter ou vscode.
+ - Espero que nenhuma das dificuldades que passei impacte negativamente no case, tentei ao máximo usar minhas habilidades e criatividade para contornar as situações da melhor forma possível no tempo estipulado, além de mostrar o máximo de competências possíveis.

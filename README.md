@@ -123,7 +123,8 @@ def dataframe_to_delta(file_name : str):
 
 Infelizmente não foi possível baixar os artefatos(parquets e diretório delta_logs) após armazenamento em formato delta devido a limitações do Databricks Comunnity em relação ao download direto do DBFS e configuração de buckets em cloud, então, disponibilizei um segundo notebook no diretório src - RESPOSTAS - LEITURA PARQUETS DELTA - para visualização das respostas via Pyspark lendo diretamente os parquets no DBFS.
 
-Evidência:
+#### Evidência:
+
 ![alt text](https://github.com/RVegh/rnp-teste/blob/master/imagens/evidencia_delta_logs.png?raw=true)
 
 ## Considerações
